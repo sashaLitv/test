@@ -1,0 +1,29 @@
+.social {
+    grid-area: social;
+    padding: 40px;
+}
+.social {
+    grid-area: social;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--color-black) 
+}
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    gap: 60px; 
+    justify-items: center; 
+    align-items: center; 
+}
+
+.social-grid i {
+    font-size: 70px;
+    color: var(--color-black);
+    transition: color 0.3s ease;
+}
+
+.social-grid i:hover {
+    transform: scale(1.2); 
+}

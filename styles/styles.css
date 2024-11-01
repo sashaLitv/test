@@ -1,0 +1,39 @@
+@import url("reset.css");
+@import url("base.css");
+@import url("main-1.css");
+@import url("main-2.css");
+@import url("header.css");
+@import url("menu.css");
+@import url("social.css");
+@import url("footer.css");
+@import url("media.css");
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "header main-1 main-1"
+        "header menu social"
+        "footer main-2 main-2";
+    gap: 10px;
+}
+
+
+
+/* @media (max-width: 400px) {
+    body {
+        grid-template-areas:
+            "header"
+            "menu"
+            "main-1"
+            "main-2"
+            "social"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+
+    .content {
+        grid-template-rows: auto auto;
+    }
+} */
