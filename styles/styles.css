@@ -11,7 +11,7 @@
 
 .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: minmax(300px, 600px) 1fr 1fr;
     grid-template-areas:
         "header main-1 main-1"
         "header menu social"
@@ -21,19 +21,4 @@
 
 
 
-/* @media (max-width: 400px) {
-    body {
-        grid-template-areas:
-            "header"
-            "menu"
-            "main-1"
-            "main-2"
-            "social"
-            "footer";
-        grid-template-columns: 1fr;
-    }
 
-    .content {
-        grid-template-rows: auto auto;
-    }
-} */
